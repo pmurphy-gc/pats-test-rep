@@ -1,17 +1,4 @@
-/* 
- * Test edit to master direct
- * Adding line from STS
-*/
-package misc;
-//Another direct website update
-//Another master change to test merging.
-//change3
-//STS change after3
-//STS second change after3
-//STS third change after3
-//Direct master change4
-//sts5
-//Master change 5
+package enc.misc;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
