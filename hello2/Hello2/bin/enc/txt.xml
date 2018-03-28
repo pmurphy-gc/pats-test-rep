@@ -1,0 +1,2566 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<link type="text/css" rel="stylesheet" media="screen,print"
+			href="/MedicalDevice/resources/styles/bootstrap/gvnix.bootstrap.css" />
+		<link type="text/css" rel="stylesheet" media="screen,print"
+			href="/MedicalDevice/resources/styles/bootstrap/offcanvas.css" />
+		<link type="text/css" rel="stylesheet" media="screen,print"
+			href="/MedicalDevice/resources/styles/bootstrap/print.css" />
+		<link type="text/css" rel="stylesheet"
+			href="/MedicalDevice/resources/dijit/themes/tundra/tundra.css" />
+		<link type="text/css" rel="stylesheet" media="screen"
+			href="/MedicalDevice/resources/vendors/Theme-DeepBlueAdmin/css/local.css" />
+		<link rel="SHORTCUT ICON" href="/MedicalDevice/resources/images/favicon.ico" />
+		<script type="text/javascript">var djConfig = {parseOnLoad: false, isDebug:
+			false, locale: 'en-us'};</script>
+		<script type="text/javascript" src="/MedicalDevice/resources/dojo/dojo.js"></script>
+		<script type="text/javascript" src="/MedicalDevice/resources/spring/Spring.js"></script>
+		<script type="text/javascript" src="/MedicalDevice/resources/spring/Spring-Dojo.js"></script>
+		<script type="text/javascript" language="JavaScript">dojo.require("dojo.parser");</script>
+		<link type="text/css" rel="stylesheet" media="screen,print"
+			href="/MedicalDevice/resources/styles/jquery/jquery-ui.css" />
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/jquery/jquery-min.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/jquery/jquery-ui.min.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/jquery/jquery.base64.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/jquery/tinymce.min.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/jquery/jquery.tinymce.min.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/jquery/jquery.validate-min.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/jquery/application.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/jquery/jquery.cookie.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/jquery/i18n/jquery.ui.datepicker-en.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/jquery/i18n/jquey.ui.medicaldevice-en.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/jquery/i18n/jquery.validate-en.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/jquery/hashtable.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/jquery/jquery.numberformatter.min.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/jquery/jquery.print.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/jquery/jquery.dialogextend.min.js"></script>
+		<link type="text/css" rel="stylesheet" media="screen,print"
+			href="/MedicalDevice/resources/styles/datatables/jquery.dataTables.css" />
+		<link type="text/css" rel="stylesheet" media="screen,print"
+			href="/MedicalDevice/resources/styles/datatables/gvnix.dataTables.css" />
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/datatables/jquery.dataTables.min.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/datatables/jquery.dataTables.ext.gvnix.selection.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/datatables/jquery.dataTables.ext.gvnix.editing.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/datatables/jquery.dataTables.ext.gvnix.rowclick.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/datatables/jquery.dataTables.ext.gvnix.rowontop.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/datatables/jquery.dataTables.ext.gvnix.detail.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/datatables/jquery.dataTables.ext.gvnix.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/datatables/jquery.dataTables.ext.gvnix.advancedfilter.js"></script>
+		<link type="text/css" rel="stylesheet" media="screen,print"
+			href="/MedicalDevice/resources/styles/menu/dropdown-submenu.css" />
+		<link type="text/css" rel="stylesheet" media="screen"
+			href="/MedicalDevice/resources/styles/bootstrap/dataTables.bootstrap.css" />
+		<link type="text/css" rel="stylesheet" media="screen"
+			href="/MedicalDevice/resources/styles/bootstrap/jquery-ui.bootstrap.css" />
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/bootstrap/bootstrap.min.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/bootstrap/dataTables.bootstrap.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/bootstrap/offcanvas.js"></script>
+		<link type="text/css" rel="stylesheet"
+			href="/MedicalDevice/resources/styles/mdscustom.css" />
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/custom/commonconstants.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/custom/commoncustom.js"></script>
+		<link type="text/css" rel="stylesheet"
+			href="/MedicalDevice/resources/styles/mdscustom.css" />
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/custom/devicecustom.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/custom/correspondence.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/custom/qualitysystem.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/custom/licencerenewal.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/custom/countryprovince.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/custom/specialaccesscompany.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/custom/applicationcustom.js"></script>
+		<script type="text/javascript"
+			src="/MedicalDevice/resources/scripts/custom/qsvalidity.js"></script>
+		<title>Welcome to MedicalDevice</title>
+	</head>
+	<body class="tundra spring">
+		<header class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div version="2.0" id="header">
+					<div class="pull-left"></div>
+					<div class="pull-right"></div>
+				</div>
+				<div version="2.0" id="menu">
+					<div class="navbar-header pull-left">
+						<button data-target=".navbar-collapse" data-toggle="collapse"
+							class="navbar-toggle" type="button">
+							<span class="icon-bar">
+							</span>
+							<span class="icon-bar">
+							</span>
+							<span class="icon-bar">
+							</span>
+						</button>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav" id="_menu">
+							<li id="c_device" class="dropdown">
+								<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+									Device
+									<b class="caret">
+									</b>
+								</a>
+								<ul class="dropdown-menu">
+									<li id="i_device_new">
+										<a title="New Device" href="/MedicalDevice/devices?form">New Device</a>
+									</li>
+									<li id="c_device" class="dropdown-submenu">
+										<a data-toggle="dropdown" class="dropdown-toggle" href="#">Search</a>
+										<ul class="dropdown-menu">
+											<li id="fi_device_deviceid">
+												<a title="Device ID"
+													href="/MedicalDevice/devices?find=ByDeviceId&amp;form&amp;page=1&amp;size=10">Device ID</a>
+											</li>
+											<li id="fi_device_perfnamecode">
+												<a title="Pref Name Code"
+													href="/MedicalDevice/devices?find=ByPerfnameCode&amp;form&amp;page=1&amp;size=10">Pref Name Code</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li id="c_Renewal" class="dropdown">
+								<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+									Renewal
+									<b class="caret">
+									</b>
+								</a>
+								<ul class="dropdown-menu">
+									<li id="c_device" class="dropdown-submenu">
+										<a data-toggle="dropdown" class="dropdown-toggle" href="#">Licence
+											Renewal</a>
+										<ul class="dropdown-menu">
+											<li id="fi_renew_searchcompany">
+												<a title="Regulatory Company"
+													href="/MedicalDevice/renewal/licence?find=ByRegulatoryId&amp;form&amp;page=1&amp;size=10">Regulatory Company</a>
+											</li>
+											<li id="fi_renew_searchlicence">
+												<a title="Licence"
+													href="/MedicalDevice/renewal/licence?find=ByLicenceId&amp;form&amp;page=1&amp;size=10">Licence</a>
+											</li>
+										</ul>
+									</li>
+									<li id="i_controller__renewalindex_id" class="dropdown-submenu">
+										<a data-toggle="dropdown" class="dropdown-toggle" href="#">Batch
+											Control</a>
+										<ul class="dropdown-menu">
+											<li id="i_renew_batch_new">
+												<a title="New"
+													href="/MedicalDevice/renewal/batchcontrol?find=New&amp;form">New</a>
+											</li>
+											<li id="i_renew_batch_fiscalyear">
+												<a title="Search Fiscal Year"
+													href="/MedicalDevice/renewal/batchcontrol?find=ByFiscalYear&amp;form">Search Fiscal Year</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li id="c_company" class="dropdown">
+								<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+									Company
+									<b class="caret">
+									</b>
+								</a>
+								<ul class="dropdown-menu">
+									<li id="i_company_new">
+										<a title="New Company" href="/MedicalDevice/companys?form">New Company</a>
+									</li>
+									<li id="fi_company_companyid">
+										<a title="Search"
+											href="/MedicalDevice/companys?find=ByCompanyId&amp;form&amp;page=1&amp;size=10">Search</a>
+									</li>
+								</ul>
+							</li>
+							<li id="c_application" class="dropdown">
+								<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+									Application
+									<b class="caret">
+									</b>
+								</a>
+								<ul class="dropdown-menu">
+									<li id="i_application_new">
+										<a title="New Application" href="/MedicalDevice/applications?form">New Application</a>
+									</li>
+									<li id="c_company_search" class="dropdown-submenu">
+										<a data-toggle="dropdown" class="dropdown-toggle" href="#">Search</a>
+										<ul class="dropdown-menu">
+											<li id="fi_application_applicationid">
+												<a title="Application Id"
+													href="/MedicalDevice/applications?find=ByApplicationId&amp;form&amp;page=1&amp;size=10">Application Id</a>
+											</li>
+											<li id="fi_application_orginlicenseid">
+												<a title="Licence No"
+													href="/MedicalDevice/applications?find=ByOrginLicenseId&amp;form&amp;page=1&amp;size=10">Licence No</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li id="c_specialaccess" class="dropdown">
+								<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+									Special Access
+									<b class="caret">
+									</b>
+								</a>
+								<ul class="dropdown-menu">
+									<li id="i_specialaccess_new">
+										<a title="New Special Access" href="/MedicalDevice/SpecialAccess?form">New Special Access</a>
+									</li>
+									<li id="i_specialaccess_copyfrom">
+										<a title="Copy From" href="">Copy From</a>
+									</li>
+									<li id="i_specialaccess_search" class="dropdown-submenu">
+										<a data-toggle="dropdown" class="dropdown-toggle" href="#">Search</a>
+										<ul class="dropdown-menu">
+											<li id="i_sa_srch_specialaccess_id">
+												<a title="Special Access Id"
+													href="/MedicalDevice/SpecialAccess?find=BySpecialId&amp;form&amp;page=1&amp;size=10">Special Access Id</a>
+											</li>
+											<li id="i_sa_srch_healthcare_prof">
+												<a title="Health Care Prof."
+													href="/MedicalDevice/SpecialAccess?find=ByPhysicianId&amp;form&amp;page=1&amp;size=10">Health Care Prof.</a>
+											</li>
+											<li id="i_sa_srch_facility">
+												<a title="Facility Id"
+													href="/MedicalDevice/SpecialAccess?find=ByFacilityId&amp;form&amp;page=1&amp;size=10">Facility Id</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li id="c_correspondence" class="dropdown">
+								<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+									Correspondence
+									<b class="caret">
+									</b>
+								</a>
+								<ul class="dropdown-menu">
+									<li id="i_correspondence_new">
+										<a title="New" href="/MedicalDevice/correspondences?form">New</a>
+									</li>
+									<li id="c_correspondence_search" class="dropdown-submenu">
+										<a data-toggle="dropdown" class="dropdown-toggle" href="#">Search</a>
+										<ul class="dropdown-menu">
+											<li id="fi_correspondence_seqcorrid">
+												<a title="Correspondence ID"
+													href="/MedicalDevice/correspondences?find=BySeqcorrId&amp;form&amp;page=1&amp;size=10">Correspondence ID</a>
+											</li>
+											<li id="fi_correspondence_incidentid">
+												<a title="Incident ID"
+													href="/MedicalDevice/correspondences?find=ByIncidentId&amp;form&amp;page=1&amp;size=10">Incident ID</a>
+											</li>
+											<li id="fi_correspondence_orginallicenceidequals">
+												<a title="Licence No"
+													href="/MedicalDevice/correspondences?find=ByOrginallicenceIdEquals&amp;form&amp;page=1&amp;size=10">Licence No</a>
+											</li>
+											<li id="fi_correspondence_certificateidequals">
+												<a title="Certificate ID"
+													href="/MedicalDevice/correspondences?find=ByCertificateIdEquals&amp;form&amp;page=1&amp;size=10">Certificate ID</a>
+											</li>
+											<li id="fi_correspondence_companyidequals">
+												<a title="Company ID"
+													href="/MedicalDevice/correspondences?find=ByCompanyIdEquals&amp;form&amp;page=1&amp;size=10">Company ID</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li id="c_qualitysystem" class="dropdown">
+								<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+									Quality System
+									<b class="caret">
+									</b>
+								</a>
+								<ul class="dropdown-menu">
+									<li id="i_correspondence_cert_new">
+										<a title="New Certificate" href="/MedicalDevice/qualitysystem/certificates?form">New Certificate</a>
+									</li>
+									<li id="c_correspondence_search" class="dropdown-submenu">
+										<a data-toggle="dropdown" class="dropdown-toggle" href="#">Search</a>
+										<ul class="dropdown-menu">
+											<li id="i_correspondence_cert_certificate">
+												<a title="Certificate ID"
+													href="/MedicalDevice/qualitysystem/certificates?find=ByCertificateIdLike&amp;form&amp;page=1&amp;size=10">Certificate ID</a>
+											</li>
+											<li id="i_correspondence_cert_orig">
+												<a title="Orig. Certificate ID"
+													href="/MedicalDevice/qualitysystem/certificates?find=ByOrigcertificateIdLike&amp;form&amp;page=1&amp;size=10">Orig. Certificate ID</a>
+											</li>
+											<li id="i_correspondence_cert_company">
+												<a title="Company ID"
+													href="/MedicalDevice/qualitysystem/certificates?find=ByCompanyIdLike&amp;form&amp;page=1&amp;size=10">Company ID</a>
+											</li>
+										</ul>
+									</li>
+									<li id="i_correspondence_validity" class="dropdown-submenu">
+										<a data-toggle="dropdown" class="dropdown-toggle" href="#">Validity</a>
+										<ul class="dropdown-menu">
+											<li id="i_certificate_validity_listbatchcontrol">
+												<a title="List all QS Renewal Ctrls"
+													href="/MedicalDevice/qualitysystem/validity?sortFieldName=batchDt&amp;sortOrder=DESC">List all QS Renewal Ctrls</a>
+											</li>
+											<li id="i_certificate_validity_searchbatchcontrol">
+												<a title="Search Batch Control"
+													href="/MedicalDevice/qualitysystem/validity?find=ByBatchDt&amp;form&amp;page=1&amp;size=10">Search Batch Control</a>
+											</li>
+											<li id="i_certificate_validity_newbatchcontrol">
+												<a title="New Batch Control" href="/MedicalDevice/qualitysystem/validity/?form">New Batch Control</a>
+											</li>
+											<li id="i_certificate_validity_batchtracking">
+												<a title="Batch Tracking"
+													href="/MedicalDevice/qualitysystem/validity/batchtracking?find=ByBatchDt&amp;form&amp;page=1&amp;size=10">Batch Tracking</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li id="c_batch" class="dropdown">
+								<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+									Batch
+									<b class="caret">
+									</b>
+								</a>
+								<ul class="dropdown-menu">
+									<li id="c_batch_mass_changes" class="dropdown-submenu">
+										<a data-toggle="dropdown" class="dropdown-toggle" href="#">Mass
+											Changes</a>
+										<ul class="dropdown-menu">
+											<li id="i_batch_mass_changes_new">
+												<a title="New" href="">New</a>
+											</li>
+											<li id="i_batch_mass_changes_search">
+												<a title="Search" href="">Search</a>
+											</li>
+										</ul>
+									</li>
+									<li id="c_finance">
+										<a title="Finance" href="">Finance</a>
+									</li>
+									<li id="i_batch_device_update">
+										<a title="Device Update" href="">Device Update</a>
+									</li>
+									<li id="i_batch_renewal_changes">
+										<a title="Renewal Changes" href="">Renewal Changes</a>
+									</li>
+									<li id="i_batch_device_obsoletion">
+										<a title="Device Obsoletion" href="">Device Obsoletion</a>
+									</li>
+									<li id="i_batch_reload_of_trans_table">
+										<a title="Reload of Trans Table" href="">Reload of Trans Table</a>
+									</li>
+								</ul>
+							</li>
+							<li id="c_maintenance" class="dropdown">
+								<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+									Maintenance
+									<b class="caret">
+									</b>
+								</a>
+								<ul class="dropdown-menu">
+									<li id="i_table_maintenance_code_table">
+										<a title="Code Table"
+											href="/MedicalDevice/maintenancece/tablemaintenance?codetable">Code Table</a>
+									</li>
+									<li id="i_device_list">
+										<a title="Preferred Name Keyword"
+											href="/MedicalDevice/preferredNameKeywords?page=1&amp;sortFieldName=prefNameWord&amp;size=10">Preferred Name Keyword</a>
+									</li>
+									<li id="i_preferrednamecodekeyword_list">
+										<a title="Preferred Name Code Keywords"
+											href="/MedicalDevice/preferredNameCodeKeywords?page=1&amp;size=10">Preferred Name Code Keywords</a>
+									</li>
+									<li id="c_table_maintenance_preferred_name_code">
+										<a title="Preferred Name Code"
+											href="/MedicalDevice/preferredNameCodes?page=1&amp;size=10">Preferred Name Code</a>
+									</li>
+									<li id="c_table_maintenance_countryregiontab">
+										<a title="Region Codes"
+											href="/MedicalDevice/maintenance/countryregiontabs?page=1&amp;size=10">Region Codes</a>
+									</li>
+									<li id="c_table_maintenance_health_care_prof">
+										<a title="Health Care Professional"
+											href="/MedicalDevice/maintenance/physicians?page=1&amp;size=10">Health Care Professional</a>
+									</li>
+									<li id="c_table_maintenance_facility">
+										<a title="Facility"
+											href="/MedicalDevice/maintenance/facilitys?page=1&amp;size=10">Facility</a>
+									</li>
+									<li id="c_table_maintenance_registrar">
+										<a title="Registrar"
+											href="/MedicalDevice/maintenance/Registrar?page=1&amp;size=10">Registrar</a>
+									</li>
+									<li id="c_table_maintenance_system_user">
+										<a title="System User" href="">System User</a>
+									</li>
+								</ul>
+							</li>
+							<li id="i_maintenance_logout">
+								<a title="Logout" href="/MedicalDevice/logout">Logout</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<div id="main">
+				<div version="2.0">
+					<div class="container">
+						<section style="width:100%; " class=""
+							id="fu_ca_gc_hc_mds_domain_renAuthCompany">
+							<div id="_title_fu_ca_gc_hc_mds_domain_renAuthCompany_id"
+								class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">Update Licence Renewal</h3>
+								</div>
+								<div class="panel-body">
+									<form id="renAuthCompany" class="form-horizontal validate "
+										action="/MedicalDevice/renewalauthcompanys" method="post"
+										enctype="application/x-www-form-urlencoded">
+										<input type="hidden" name="_method" value="PUT" />
+										<div id="row1" class="row">
+											<div class="col-lg-4">
+												<label class="control-label col-lg-6"
+													for="c_ca_gc_hc_mds_domain_renauthcompany_companyauthid">Authorize ID: </label>
+												<input readonly="readonly" value="101173" placeholder="101173"
+													type="text" id="c_ca_gc_hc_mds_domain_renauthcompany_companyauthid"
+													class="form-control col-lg-5" />
+											</div>
+											<div class="col-lg-4">
+												<label class="control-label col-lg-6"
+													for="c_ca_gc_hc_mds_domain_renauthcompany_renewalrundt">Renewal Date: </label>
+												<input readonly="readonly" value="2016-07-27"
+													placeholder="2016-07-27" type="text"
+													id="c_ca_gc_hc_mds_domain_renauthcompany_renewalrundt"
+													class="form-control col-lg-5" />
+												<input readonly="readonly" value="101173 2016-07-27 00:00:00.0"
+													name="idString" type="hidden" />
+											</div>
+											<div class="col-lg-4">
+												<div class="control-group form-group"
+													id="_c_ca_gc_hc_mds_domain_RenAuthCompany_receiptDate_id">
+													<label class="control-label col-lg-6" for="_receiptDate_id">Received
+														Date :</label>
+													<div class="controls datetime col-lg-5">
+														<input id="_receiptDate_id" name="receiptDate"
+															class="datepicker form-control input-sm" title="Enter Received Date (This field is required)"
+															data-invalid="Please enter valid Received Date"
+															data-dateformat="yyyy-MM-dd" data-missing="This field is required"
+															data-required="true" type="text" value="" />
+													</div>
+												</div>
+												<br />
+											</div>
+										</div>
+										<div id="row2" class="row">
+											<div class="col-lg-4">
+												<div class="control-group form-group"
+													id="_c_ca_gc_hc_mds_domain_RenAuthCompany_rejectDate_id">
+													<label class="control-label col-lg-6" for="_rejectDate_id">Reject Date
+														:</label>
+													<div class="controls datetime col-lg-5">
+														<input id="_rejectDate_id" name="rejectDate"
+															class="datepicker form-control input-sm" title="Enter Reject Date (This field is required)"
+															data-invalid="Please enter valid Reject Date"
+															data-dateformat="yyyy-MM-dd" data-missing="This field is required"
+															data-required="true" type="text" value="" />
+													</div>
+												</div>
+												<br />
+											</div>
+											<div class="col-lg-4">
+												<label required="true" class="control-label col-lg-6"
+													for="c_ca_gc_hc_mds_domain_RenAuthCompany_completePackage">Authorize difference:</label>
+												<select class="form-control span-2 col-lg-5" name="completePackage"
+													id="c_ca_gc_hc_mds_domain_RenAuthCompany_completePackage">
+													<option selected="selected" value="">Select...</option>
+													<option value="Y">Yes</option>
+													<option value="N">No</option>
+												</select>
+											</div>
+											<div class="col-lg-4" />
+										</div>
+										<div id="row3" class="row">
+											<div class="col-lg-12">
+												<div class="control-group form-group"
+													id="_c_ca_gc_hc_mds_domain_RenAuthCompany_companyInfo_id">
+													<label class="control-label" for="_companyInfo_id">Company Info
+														:
+													</label>
+													<div class="controls">
+														<textarea id="_companyInfo_id" name="companyInfo"
+															data-required="false" class="form-control" disabled="disabled"
+															rows="3">BAXTER CORPORATION
+															7125 MISSISSAUGA ROAD
+															MISSISSAUGA ON CA L5N 0C2</textarea>
+													</div>
+												</div>
+												<br />
+											</div>
+										</div>
+										<div id="row4" class="row">
+											<div class="col-lg-3 col-md-offset-3">
+												<input value="Save" class="center-block btn btn-success"
+													type="submit" id="proceed" />
+											</div>
+											<div class="col-lg-3 text-center">
+												<input
+													onclick="window.location=&#039;/MedicalDevice/renauthcompanys/101173%202016-07-27%2000:00:00.0?form&#039;"
+													value="Cancel" class="center-block btn btn-success" type="button" />
+											</div>
+										</div>
+										<input id="_id_id" name="id" type="hidden"
+											value="101173 Wed Jul 27 00:00:00 EDT 2016" />
+									</form>
+								</div>
+							</div>
+						</section>
+						<script type="text/javascript">
+							jQuery(document).ready(function() {
+							jQuery(".control-label").addClass("col-xs-5 col-sm-4 col-md-3 col-lg-3");
+							jQuery(".controls").addClass("red col-xs-7 col-sm-8 col-md-9 col-lg-9");
+							jQuery(".controls.datetime").removeClass("col-xs-7 col-sm-8
+							col-md-9 col-lg-9").addClass("col-xs-7 col-xs-offset2 col-sm-5
+							col-sm-offset3 col-md-4 col-md-offset5 col-lg-3 col-lg-offset6");
+							});
+						</script>
+						<br />
+						<div class="row">
+							<div class="panel with-nav-tabs panel-primary">
+								<div class="panel-heading">
+									<ul class="nav nav-tabs responsive">
+										<li class="active">
+											<a data-toggle="tab" href="#tab1">Manufacturer List</a>
+										</li>
+										<li>
+											<a data-toggle="tab" href="#tab2">Mfg License Details</a>
+										</li>
+										<li>
+											<a data-toggle="tab" href="#tab3">Company Contacts</a>
+										</li>
+									</ul>
+								</div>
+								<div class="panel-body">
+									<div class="tab-content">
+										<div id="tab1" class="tab-pane active">
+											<form id="renewal"
+												action="/MedicalDevice/renauthcompanys/101173%202016-07-27%2000:00:00.0?form"
+												method="post">
+												<script type="text/javascript">
+													$(document).ready(function () {
+													$.fn.createDatatable("#manufacturers", [1, "asc"]);
+													});
+												</script>
+												<table cellspacing="0" class="display" width="100%"
+													id="manufacturers">
+													<thead>
+														<tr>
+															<th />
+															<th>Mfg ID</th>
+															<th>Manufacturer Name</th>
+															<th>Receipt Date</th>
+															<th>Comments</th>
+															<th />
+														</tr>
+													</thead>
+													<tbody>
+														<tr id="tr_manufacturer_0">
+															<td>
+																<i onclick="editManufacturer(&#039;tr_manufacturer_&#039;, 0)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>101165</td>
+															<td>BAXTER HEALTHCARE CORPORATION A DIVISION OF BAXTER
+																INTERNATIONAL, INC.</td>
+															<td></td>
+															<td></td>
+															<td>
+																<i
+																	onclick="deleteManufacturer(, &#039;tr_manufacturer_&#039;, 0)"
+																	class="ui-icon ui-icon-trash" />
+															</td>
+														</tr>
+														<tr id="tr_manufacturer_1">
+															<td>
+																<i onclick="editManufacturer(&#039;tr_manufacturer_&#039;, 1)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+															<td></td>
+															<td></td>
+															<td>
+																<i
+																	onclick="deleteManufacturer(, &#039;tr_manufacturer_&#039;, 1)"
+																	class="ui-icon ui-icon-trash" />
+															</td>
+														</tr>
+														<tr id="tr_manufacturer_2">
+															<td>
+																<i onclick="editManufacturer(&#039;tr_manufacturer_&#039;, 2)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>104746</td>
+															<td>*GAMBRO DASCO S.P.A.</td>
+															<td></td>
+															<td></td>
+															<td>
+																<i
+																	onclick="deleteManufacturer(, &#039;tr_manufacturer_&#039;, 2)"
+																	class="ui-icon ui-icon-trash" />
+															</td>
+														</tr>
+														<tr id="tr_manufacturer_3">
+															<td>
+																<i onclick="editManufacturer(&#039;tr_manufacturer_&#039;, 3)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>107861</td>
+															<td>BAXTER AG</td>
+															<td></td>
+															<td></td>
+															<td>
+																<i
+																	onclick="deleteManufacturer(, &#039;tr_manufacturer_&#039;, 3)"
+																	class="ui-icon ui-icon-trash" />
+															</td>
+														</tr>
+														<tr id="tr_manufacturer_4">
+															<td>
+																<i onclick="editManufacturer(&#039;tr_manufacturer_&#039;, 4)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>109452</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+															<td></td>
+															<td></td>
+															<td>
+																<i
+																	onclick="deleteManufacturer(, &#039;tr_manufacturer_&#039;, 4)"
+																	class="ui-icon ui-icon-trash" />
+															</td>
+														</tr>
+														<tr id="tr_manufacturer_5">
+															<td>
+																<i onclick="editManufacturer(&#039;tr_manufacturer_&#039;, 5)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>129031</td>
+															<td>APATECH LIMITED</td>
+															<td></td>
+															<td></td>
+															<td>
+																<i
+																	onclick="deleteManufacturer(, &#039;tr_manufacturer_&#039;, 5)"
+																	class="ui-icon ui-icon-trash" />
+															</td>
+														</tr>
+														<tr id="tr_manufacturer_6">
+															<td>
+																<i onclick="editManufacturer(&#039;tr_manufacturer_&#039;, 6)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>129789</td>
+															<td>BAXTER HEALTHCARE SA</td>
+															<td></td>
+															<td></td>
+															<td>
+																<i
+																	onclick="deleteManufacturer(, &#039;tr_manufacturer_&#039;, 6)"
+																	class="ui-icon ui-icon-trash" />
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												<div class="row">
+													<div class="col-lg-12">
+														<input value="" id="manufacturer_editrow" type="hidden" />
+														<input value="7" id="manufacturer_nextindex" type="hidden" />
+													</div>
+												</div>
+												<h5>* Mfg has more than one Reg in this Fiscal Year</h5>
+												<br />
+												<p id="manufacturersMessageTxt" />
+												<legend>Edit Manufacturers List</legend>
+												<div class="row">
+													<br />
+													<div class="col-lg-3">
+														<div class="form-group">
+															<label class="control-label col-lg-6" for="renewal_id_company_id">Mfg ID:</label>
+															<div class="col-lg-6">
+																<div class="controls">
+																	<input value="" class="form-control" required="true"
+																		title="" maxlength="17" type="text" id="renewal_id_company_id" />
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-lg-3">
+														<label class="control-label col-lg-4" for="renewal_receiptDate">Receipt
+															Date: </label>
+														<div class="col-lg-7">
+															<input value="" type="text" data-missing="required"
+																data-dateformat="yyyy-mm-dd" data-invalid="Please enter valid Receipt Date"
+																title="" class="datepicker form-control" name="receiptDate"
+																id="renewal_receiptDate" />
+														</div>
+													</div>
+												</div>
+												<br />
+												<div class="row">
+													<div class="col-lg-3 col-md-offset-3">
+														<button
+															onclick="performManufacturerUpdate(, &#039;tr_devdrug_&#039;)"
+															type="button" class="center-block btn btn-success">
+															Save
+														</button>
+													</div>
+													<div class="col-lg-3 text-center">
+														<button onclick="cancelManufacturerUpdate()" type="button"
+															class="center-block btn btn-success">
+															Cancel
+														</button>
+													</div>
+												</div>
+											</form>
+										</div>
+										<div id="tab2" class="tab-pane">
+											<form id="licrenewal"
+												action="/MedicalDevice/renauthcompanys/101173%202016-07-27%2000:00:00.0?form"
+												method="post">
+												<br />
+												<div class="row">
+													<div class="col-lg-6">
+														<div class="form-group">
+															<label class="control-label col-lg-4"
+																for="label_ca_gc_hc_mds_domain_renauthcompany_mfgid">Manufacturer Id:</label>
+															<div class="col-lg-8">
+																<div class="controls">
+																	<select onChange="selectManuf_licenceTab(this.value)"
+																		class="form-control valid" id="label_ca_gc_hc_mds_domain_renauthcompany_mfgid"
+																		name="renewal">
+																		<option value="">All</option>
+																		<option value="101165">101165 - BAXTER HEALTHCARE
+																			CORPORATION A DIVISION OF BAXTER INTERNATIONAL, INC. </option>
+																		<option value="101215">101215 - BAXTER HEALTHCARE
+																			CORPORATION </option>
+																		<option value="104746">104746 - *GAMBRO DASCO S.P.A. </option>
+																		<option value="107861">107861 - BAXTER AG </option>
+																		<option value="109452">109452 - BAXTER HEALTHCARE
+																			CORPORATION </option>
+																		<option value="129031">129031 - APATECH LIMITED </option>
+																		<option value="129789">129789 - BAXTER HEALTHCARE SA </option>
+																	</select>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<br />
+												<br />
+												<script type="text/javascript">
+													$(document).ready(function () {
+													$.fn.createDatatable("#licenceInfosTable" );
+													backupLicenceData();
+
+													});
+
+												</script>
+												<table cellspacing="0" class="display" width="100%"
+													id="licenceInfosTable">
+													<thead>
+														<tr>
+															<th />
+															<th>Orig. Lic.</th>
+															<th>Licence name</th>
+															<th>Receipt Date</th>
+															<th>Fee Flag</th>
+															<th>Fee Date</th>
+															<th>Lic. Status</th>
+															<th>Issue Date</th>
+															<th>Manufacturer Id</th>
+															<th>Manufacturer</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr id="tr_licenceInfo_0">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 0)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>328</td>
+															<td>COLLEAGUE VOLUMETRIC INFUSION PUMPS                                                                                                                   </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>D</td>
+															<td>2013-10-10</td>
+															<td>129789</td>
+															<td>BAXTER HEALTHCARE SA</td>
+														</tr>
+														<tr id="tr_licenceInfo_1">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 1)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>412</td>
+															<td>HOMECHOICE AUTOMATED PD SYSTEM                                                                                                                        </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2013-01-22</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_2">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 2)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>2718</td>
+															<td>VIAL-MATE ADAPTOR                                                                                                                                     </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>1999-04-30</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_3">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 3)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>4372</td>
+															<td>TUR SET ADAPTOR AND CONNECTORS                                                                                                                        </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2007-01-23</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_4">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 4)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>4383</td>
+															<td>VIAL ADAPTER                                                                                                                                          </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2012-04-02</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_5">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 5)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>4400</td>
+															<td>VIAFLEX BAG AND ACCESSORIES                                                                                                                           </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2011-04-07</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_6">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 6)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>4711</td>
+															<td>ALL-IN-ONE EMPTY E.V.A CONTAINER                                                                                                                      </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2014-02-20</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_7">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 7)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>5130</td>
+															<td>ADMINISTRATION SET FILTER                                                                                                                             </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2012-06-18</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_8">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 8)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>5557</td>
+															<td>EXACTA-MED EVA CONTAINER                                                                                                                              </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2015-02-17</td>
+															<td>101165</td>
+															<td>BAXTER HEALTHCARE CORPORATION A DIVISION OF BAXTER
+																INTERNATIONAL, INC.</td>
+														</tr>
+														<tr id="tr_licenceInfo_9">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 9)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>7623</td>
+															<td>STOPCOCK - POLYETHYLENE                                                                                                                               </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2012-10-01</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_10">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 10)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>7662</td>
+															<td>INTERLINK ADAPTER                                                                                                                                     </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2012-08-09</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_11">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 11)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>7669</td>
+															<td>LEVER LOCK CANNULA                                                                                                                                    </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2010-01-08</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_12">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 12)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>8526</td>
+															<td>TUBULURES POUR HEMODIALYSE                                                                                                                            </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2015-06-09</td>
+															<td>104746</td>
+															<td>*GAMBRO DASCO S.P.A.</td>
+														</tr>
+														<tr id="tr_licenceInfo_13">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 13)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>8797</td>
+															<td>FLOSEAL HEMOSTATIC MATRIX                                                                                                                             </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2015-11-25</td>
+															<td>129789</td>
+															<td>BAXTER HEALTHCARE SA</td>
+														</tr>
+														<tr id="tr_licenceInfo_14">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 14)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>9834</td>
+															<td>SPIKE ADAPTER                                                                                                                                         </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2015-11-04</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_15">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 15)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>9914</td>
+															<td>DUPLOJECT SPRAY SET                                                                                                                                   </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2012-08-17</td>
+															<td>107861</td>
+															<td>BAXTER AG</td>
+														</tr>
+														<tr id="tr_licenceInfo_16">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 16)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>9986</td>
+															<td>CAPD DISCONNECT CAPS                                                                                                                                  </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2012-05-17</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_17">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 17)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>9991</td>
+															<td>CONNECTION SHIELD                                                                                                                                     </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2008-01-25</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_18">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 18)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>10028</td>
+															<td>INFUSOR SYSTEM                                                                                                                                        </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2014-01-22</td>
+															<td>129789</td>
+															<td>BAXTER HEALTHCARE SA</td>
+														</tr>
+														<tr id="tr_licenceInfo_19">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 19)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>11391</td>
+															<td>DIALYZER                                                                                                                                              </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2013-07-22</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_20">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 20)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>11632</td>
+															<td>SIGMA 8000                                                                                                                                            </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2013-04-03</td>
+															<td>109452</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_21">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 21)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>12154</td>
+															<td>INFUSION PUMPS                                                                                                                                        </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2013-06-25</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_22">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 22)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>12353</td>
+															<td>IV BLOOD ADMINISTRATION SET                                                                                                                           </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2012-06-18</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_23">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 23)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>14660</td>
+															<td>IV SOLUTION ADMINISTRATION SETS                                                                                                                       </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2015-10-29</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_24">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 24)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>19506</td>
+															<td>UV FLASH GERMICIDAL EXCHANGE DEVICE AND ACCESSORIES                                                                                                   </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2012-05-17</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_25">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 25)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>19511</td>
+															<td>AUTOMATED PERITONEAL DIALYSIS (APD) THERAPY SETS                                                                                                      </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2013-11-14</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_26">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 26)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>19523</td>
+															<td>SETS USED IN CONTINUOUS AMBULATORY PERITONEAL
+																DIALYSIS (CAPD)                                                                                         </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2014-08-27</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_27">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 27)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>20440</td>
+															<td>IPUMP PAIN MANAGEMENT PUMP                                                                                                                            </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2009-04-20</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_28">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 28)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>33318</td>
+															<td>DUPLOJECT SYSTEM                                                                                                                                      </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2014-04-09</td>
+															<td>107861</td>
+															<td>BAXTER AG</td>
+														</tr>
+														<tr id="tr_licenceInfo_29">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 29)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>33623</td>
+															<td>DUPLOCATH                                                                                                                                             </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2012-05-25</td>
+															<td>107861</td>
+															<td>BAXTER AG</td>
+														</tr>
+														<tr id="tr_licenceInfo_30">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 30)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>37017</td>
+															<td>COSEAL SURGICAL SEALANT                                                                                                                               </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2010-05-03</td>
+															<td>129789</td>
+															<td>BAXTER HEALTHCARE SA</td>
+														</tr>
+														<tr id="tr_licenceInfo_31">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 31)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>37593</td>
+															<td>DUPLOJECT EASY-PREP                                                                                                                                   </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2011-10-27</td>
+															<td>129789</td>
+															<td>BAXTER HEALTHCARE SA</td>
+														</tr>
+														<tr id="tr_licenceInfo_32">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 32)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>61058</td>
+															<td>NITROGLYCERIN SET WITH DUO-VENT SPIKE                                                                                                                 </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2011-07-19</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_33">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 33)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>61776</td>
+															<td>HOMECHOICE PRO AUTOMATED PD SYSTEM                                                                                                                    </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2013-01-22</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_34">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 34)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>62147</td>
+															<td>CHEMO-AIDE DISPENSING PIN                                                                                                                             </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2003-03-25</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_35">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 35)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>64210</td>
+															<td>TITANIUM ADAPTORS                                                                                                                                     </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2010-09-08</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_36">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 36)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>69975</td>
+															<td>TISSEEL/ARTISS SPRAY SET                                                                                                                              </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2015-03-05</td>
+															<td>107861</td>
+															<td>BAXTER AG</td>
+														</tr>
+														<tr id="tr_licenceInfo_37">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 37)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>71547</td>
+															<td>OSTENE(TM) (ALKYLENE OXIDE COPOLYMER BONEWAX)                                                                                                         </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2015-06-05</td>
+															<td>129031</td>
+															<td>APATECH LIMITED</td>
+														</tr>
+														<tr id="tr_licenceInfo_38">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 38)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>71824</td>
+															<td>COLLEAGUE GUARDIAN CONFIGURATION TOOL                                                                                                                 </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2011-05-25</td>
+															<td>129789</td>
+															<td>BAXTER HEALTHCARE SA</td>
+														</tr>
+														<tr id="tr_licenceInfo_39">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 39)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>72677</td>
+															<td>XENIUM DIALYZER                                                                                                                                       </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2013-01-22</td>
+															<td>129789</td>
+															<td>BAXTER HEALTHCARE SA</td>
+														</tr>
+														<tr id="tr_licenceInfo_40">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 40)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>72693</td>
+															<td>COSEAL SPRAY SET                                                                                                                                      </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2006-11-08</td>
+															<td>107861</td>
+															<td>BAXTER AG</td>
+														</tr>
+														<tr id="tr_licenceInfo_41">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 41)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>73145</td>
+															<td>EPIDURAL SOLUTION ADMINISTRATION SETS                                                                                                                 </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2011-06-03</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_42">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 42)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>73146</td>
+															<td>SUBCUTANEOUS SOLUTION ADMINISTRATION SETS                                                                                                             </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2012-06-18</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_43">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 43)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>73147</td>
+															<td>VEIN ACCESS CATHETER EXTENSION SETS                                                                                                                   </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2014-01-22</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_44">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 44)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>73148</td>
+															<td>IV SET AND VEIN ACCESS SET CONNECTORS AND ADAPTORS                                                                                                    </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2012-06-18</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_45">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 45)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>73150</td>
+															<td>IV ADMINISTRATION SET EXTENSION SETS                                                                                                                  </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2014-01-22</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_46">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 46)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>73151</td>
+															<td>SECONDARY MEDICATION SETS                                                                                                                             </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2014-01-22</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_47">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 47)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>73152</td>
+															<td>BLADDER IRRIGATION SETS                                                                                                                               </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2012-06-18</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_48">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 48)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>73153</td>
+															<td>ARTHROSCOPIC IRRIGATION SETS                                                                                                                          </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2007-01-23</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_49">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 49)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>73667</td>
+															<td>COLLEAGUE DL2 EVENT HISTORY DOWNLOAD KIT                                                                                                              </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2010-08-09</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_50">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 50)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>74219</td>
+															<td>COLLEAGUE CXE GUARDIAN FEATURE KIT                                                                                                                    </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2010-01-07</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_51">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 51)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>75714</td>
+															<td>V-LINK ANTIMICROBIAL LUER ACTIVATED DEVICE                                                                                                            </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2008-09-23</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_52">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 52)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>75950</td>
+															<td>DIALYZER                                                                                                                                              </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2007-12-20</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_53">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 53)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>75983</td>
+															<td>CAPD DISCONNECT CAPS                                                                                                                                  </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2011-01-21</td>
+															<td>129789</td>
+															<td>BAXTER HEALTHCARE SA</td>
+														</tr>
+														<tr id="tr_licenceInfo_54">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 54)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>75984</td>
+															<td>AUTOMATED PERITONEAL DIALYSIS (APD) THERAPY SETS                                                                                                      </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2013-09-23</td>
+															<td>129789</td>
+															<td>BAXTER HEALTHCARE SA</td>
+														</tr>
+														<tr id="tr_licenceInfo_55">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 55)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>75985</td>
+															<td>CONNECTION SHIELD                                                                                                                                     </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2011-01-21</td>
+															<td>129789</td>
+															<td>BAXTER HEALTHCARE SA</td>
+														</tr>
+														<tr id="tr_licenceInfo_56">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 56)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>78214</td>
+															<td>SIGMA SPECTRUM INFUSION PUMP WITH MASTER DRUG LIBRARY                                                                                                 </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2015-09-23</td>
+															<td>109452</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_57">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 57)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>78689</td>
+															<td>DUO SET/A                                                                                                                                             </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2013-08-06</td>
+															<td>107861</td>
+															<td>BAXTER AG</td>
+														</tr>
+														<tr id="tr_licenceInfo_58">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 58)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>81532</td>
+															<td>ENTERAL FEEDING SYRINGES AND DISPENSERS                                                                                                               </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2015-02-17</td>
+															<td>101165</td>
+															<td>BAXTER HEALTHCARE CORPORATION A DIVISION OF BAXTER
+																INTERNATIONAL, INC.</td>
+														</tr>
+														<tr id="tr_licenceInfo_59">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 59)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>81921</td>
+															<td>FLOSEAL SPECIAL APPLICATOR TIPS                                                                                                                       </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2010-01-29</td>
+															<td>129789</td>
+															<td>BAXTER HEALTHCARE SA</td>
+														</tr>
+														<tr id="tr_licenceInfo_60">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 60)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>81950</td>
+															<td>ACTIFUSE MIS SILICATE SUBSTITUTED CALCIUM PHOSPHATE
+																APPLICATOR AND CARTRIDGE                                                                          </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2013-10-21</td>
+															<td>129031</td>
+															<td>APATECH LIMITED</td>
+														</tr>
+														<tr id="tr_licenceInfo_61">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 61)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>81952</td>
+															<td>ACTIFUSE ABX/MIS SILICATE SUBSTITUTED CALCIUM
+																PHOSPHATE                                                                                               </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>D</td>
+															<td>2013-10-21</td>
+															<td>129031</td>
+															<td>APATECH LIMITED</td>
+														</tr>
+														<tr id="tr_licenceInfo_62">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 62)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>82237</td>
+															<td>ACTIFUSE SILICATED CALCIUM PHOSPHATE                                                                                                                  </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2011-12-14</td>
+															<td>129031</td>
+															<td>APATECH LIMITED</td>
+														</tr>
+														<tr id="tr_licenceInfo_63">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 63)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>82741</td>
+															<td>ADEPT                                                                                                                                                 </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2010-05-04</td>
+															<td>107861</td>
+															<td>BAXTER AG</td>
+														</tr>
+														<tr id="tr_licenceInfo_64">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 64)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>82999</td>
+															<td>XENIUM XP DIALYZER                                                                                                                                    </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2010-06-09</td>
+															<td>129789</td>
+															<td>BAXTER HEALTHCARE SA</td>
+														</tr>
+														<tr id="tr_licenceInfo_65">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 65)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>83266</td>
+															<td>EPIDURAL PUMP SETS                                                                                                                                    </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2010-07-26</td>
+															<td>129789</td>
+															<td>BAXTER HEALTHCARE SA</td>
+														</tr>
+														<tr id="tr_licenceInfo_66">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 66)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>83267</td>
+															<td>AIR ELIMINATING SPIKE PUMP SETS                                                                                                                       </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2010-07-26</td>
+															<td>129789</td>
+															<td>BAXTER HEALTHCARE SA</td>
+														</tr>
+														<tr id="tr_licenceInfo_67">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 67)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>84553</td>
+															<td>RAPID-FILL SYRINGE STRIP                                                                                                                              </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2015-02-17</td>
+															<td>101165</td>
+															<td>BAXTER HEALTHCARE CORPORATION A DIVISION OF BAXTER
+																INTERNATIONAL, INC.</td>
+														</tr>
+														<tr id="tr_licenceInfo_68">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 68)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>84948</td>
+															<td>ONE-LINK, NEEDLE-FREE IV CONNECTOR WITH NEUTRAL FLUID
+																DISPLACEMENT                                                                                    </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2011-01-20</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_69">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 69)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>84949</td>
+															<td>ONE-LINK, NON-DEHP CATHETER EXTENSION SET,NEEDLE-FREE
+																IV CONNECTOR WITH NEUTRAL FLUID DISPLACEMENT                                                    </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2013-09-19</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_70">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 70)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>86685</td>
+															<td>XENIUM+ DIALYZER                                                                                                                                      </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2011-07-22</td>
+															<td>129789</td>
+															<td>BAXTER HEALTHCARE SA</td>
+														</tr>
+														<tr id="tr_licenceInfo_71">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 71)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>86991</td>
+															<td>IV SOLUTION ADMINISTRATION SETS                                                                                                                       </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2012-06-18</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_72">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 72)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>86992</td>
+															<td>SECONDARY MEDICATION SETS                                                                                                                             </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2011-08-24</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_73">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 73)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>86993</td>
+															<td>IV EXTENSION SETS                                                                                                                                     </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2013-10-10</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_74">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 74)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>87023</td>
+															<td>IV BLOOD ADMINISTRATION SETS                                                                                                                          </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2011-08-26</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_75">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 75)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>87024</td>
+															<td>BLADDER IRRIGATION SETS                                                                                                                               </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2011-08-26</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_licenceInfo_76">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 76)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>89239</td>
+															<td>EASYSPRAY PRESSURE REGULATOR                                                                                                                          </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2015-02-10</td>
+															<td>107861</td>
+															<td>BAXTER AG</td>
+														</tr>
+														<tr id="tr_licenceInfo_77">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 77)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>89640</td>
+															<td>EXACTAMED VAGINAL DISPENSER                                                                                                                           </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2015-02-17</td>
+															<td>101165</td>
+															<td>BAXTER HEALTHCARE CORPORATION A DIVISION OF BAXTER
+																INTERNATIONAL, INC.</td>
+														</tr>
+														<tr id="tr_licenceInfo_78">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 78)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>89845</td>
+															<td>INFUSOR XLV SYSTEM                                                                                                                                    </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2012-10-10</td>
+															<td>129789</td>
+															<td>BAXTER HEALTHCARE SA</td>
+														</tr>
+														<tr id="tr_licenceInfo_79">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 79)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>92649</td>
+															<td>CURVED APPLICATOR TIP                                                                                                                                 </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2014-01-21</td>
+															<td>129789</td>
+															<td>BAXTER HEALTHCARE SA</td>
+														</tr>
+														<tr id="tr_licenceInfo_80">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 80)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>93250</td>
+															<td>FOLFUSOR PORTABLE ELASTOMERIC INFUSION SYSTEM                                                                                                         </td>
+															<td></td>
+															<td>N</td>
+															<td></td>
+															<td>I</td>
+															<td>2014-05-08</td>
+															<td>129789</td>
+															<td>BAXTER HEALTHCARE SA</td>
+														</tr>
+														<tr id="tr_licenceInfo_81">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 81)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>94928</td>
+															<td>HEMOPATCH                                                                                                                                             </td>
+															<td></td>
+															<td>L</td>
+															<td></td>
+															<td>I</td>
+															<td>2015-03-26</td>
+															<td>107861</td>
+															<td>BAXTER AG</td>
+														</tr>
+														<tr id="tr_licenceInfo_82">
+															<td>
+																<i onclick="editLicenceDetails(&#039;tr_licenceInfo_&#039;, 82)"
+																	class="ui-icon ui-icon-pencil" />
+															</td>
+															<td>95102</td>
+															<td>XENIUM ULTRA H DIALYZER                                                                                                                               </td>
+															<td></td>
+															<td>L</td>
+															<td></td>
+															<td>I</td>
+															<td>2015-05-08</td>
+															<td>129789</td>
+															<td>BAXTER HEALTHCARE SA</td>
+														</tr>
+													</tbody>
+												</table>
+												<div class="row">
+													<div class="col-lg-12">
+														<input value="" id="licenceInfo_editrow" type="hidden" />
+														<input value="83" id="licenceInfo_nextindex" type="hidden" />
+													</div>
+												</div>
+												<br />
+												<br />
+												<br />
+												<br />
+												<p id="licenceDetailMessageTxt" />
+												<legend>Edit Licence Details List</legend>
+												<div class="row">
+													<div class="col-lg-3">
+														<label class="control-label col-lg-5" for="licenceinfo_originalLicenceNo">Org.
+															Licence No: </label>
+														<div class="col-lg-5">
+															<input readonly="readonly" class="form-control"
+																value="" title="" type="text" id="licenceinfo_originalLicenceNo" />
+														</div>
+													</div>
+													<div class="col-lg-6">
+														<label class="control-label col-lg-3" for="licenceinfo_licenceName">Licence
+															Name: </label>
+														<div class="col-lg-8">
+															<input readonly="readonly" class="form-control"
+																value="" title="" type="text" id="licenceinfo_licenceName" />
+														</div>
+													</div>
+												</div>
+												<br />
+												<div class="row">
+													<div class="col-lg-3">
+														<label class="control-label col-lg-5" for="licenceinfo_receiptDate">Receipt
+															Date: </label>
+														<div class="col-lg-5">
+															<input value="" type="text" data-missing="required"
+																data-dateformat="yyyy-mm-dd" data-invalid="Please enter valid Receipt Date"
+																title="" class="datepicker form-control" name="receiptDate"
+																id="licenceinfo_receiptDate" />
+														</div>
+													</div>
+													<div class="col-lg-3">
+														<label class="col-lg-4">Fee Flag: </label>
+														<select class="form-control col-lg-3" name="feeRedFlag"
+															id="c_ca_gc_hc_mds_domain_renewal_feeRedFlag">
+															<option value="Y">Yes</option>
+															<option value="N">No</option>
+														</select>
+													</div>
+													<div class="col-lg-3">
+														<label class="control-label col-lg-4" for="licenceinfo_feeReductionDt">Fee Date:</label>
+														<div class="col-lg-5">
+															<input value="" type="text" data-missing="required"
+																data-dateformat="yyyy-mm-dd" data-invalid="Please enter valid Fee Date"
+																title="" class="datepicker form-control" name="feeReductionDt"
+																id="licenceinfo_feeReductionDt" />
+														</div>
+													</div>
+													<div class="col-lg-3">
+														<label class="col-lg-4">Lic. Status: </label>
+														<select class="form-control col-lg-4" name="licenceStatus"
+															id="c_ca_gc_hc_mds_domain_licenceinfo_licenceStatus">
+															<option selected="selected" value="">Select...</option>
+															<option value="Y">Yes</option>
+															<option value="N">No</option>
+														</select>
+													</div>
+												</div>
+												<br />
+												<div class="row">
+													<div class="col-lg-3 text-center col-md-offset-3">
+														<button class="center-block btn btn-success">Save</button>
+													</div>
+													<div class="col-lg-3 text-center">
+														<button class="center-block btn btn-success">Cancel</button>
+													</div>
+												</div>
+											</form>
+										</div>
+										<div id="tab3" class="tab-pane">
+											<form id="renewal"
+												action="/MedicalDevice/renauthcompanys/101173%202016-07-27%2000:00:00.0?form"
+												method="post">
+												<br />
+												<div class="row">
+													<div class="col-lg-6">
+														<div class="form-group">
+															<label class="control-label col-lg-4"
+																for="label_ca_gc_hc_mds_domain_renauthcompany_mfgid">Manufacturer Id:</label>
+															<div class="col-lg-8">
+																<div class="controls">
+																	<select onChange="selectManuf_contactTab(this.value)"
+																		class="form-control valid" id="label_ca_gc_hc_mds_domain_renauthcompany_mfgid"
+																		name="renewal">
+																		<option value="">All</option>
+																		<option value="101165">101165 - BAXTER HEALTHCARE
+																			CORPORATION A DIVISION OF BAXTER INTERNATIONAL, INC. </option>
+																		<option value="101215">101215 - BAXTER HEALTHCARE
+																			CORPORATION </option>
+																		<option value="104746">104746 - *GAMBRO DASCO S.P.A. </option>
+																		<option value="107861">107861 - BAXTER AG </option>
+																		<option value="109452">109452 - BAXTER HEALTHCARE
+																			CORPORATION </option>
+																		<option value="129031">129031 - APATECH LIMITED </option>
+																		<option value="129789">129789 - BAXTER HEALTHCARE SA </option>
+																	</select>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<br />
+												<script type="text/javascript">
+													$(document).ready(function () {
+													$.fn.createDatatable("#companyContactTable" );
+													backupContactData();
+
+													});
+
+												</script>
+												<table cellspacing="0" class="display" width="100%"
+													id="companyContactTable">
+													<thead>
+														<tr>
+															<th>Id</th>
+															<th>Name</th>
+															<th>Phone No.</th>
+															<th>Ext</th>
+															<th>eMail Address</th>
+															<th>Fax</th>
+															<th>Manufacturer Id</th>
+															<th>Manufacturer</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr id="tr_contact_0">
+															<td>16388</td>
+															<td>LISA ARMOUR                                  </td>
+															<td>9052816867</td>
+															<td>0</td>
+															<td>OBS_lisa_armour@baxter.com                                            </td>
+															<td>9052816750</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_contact_1">
+															<td>19617</td>
+															<td>BARBARA K. BARBEAU                           </td>
+															<td>8474736274</td>
+															<td>0</td>
+															<td>OBS_barbara_barbeau@baxter.com                                        </td>
+															<td>8475670734</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_contact_2">
+															<td>22158</td>
+															<td>THOMAS SAMPOGNA                              </td>
+															<td>8474734307</td>
+															<td>0</td>
+															<td>OBS_thomas_sampogna@baxter.com                                        </td>
+															<td>8477865116</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_contact_3">
+															<td>21930</td>
+															<td>JESSE SEIDMAN                                </td>
+															<td>2242704412</td>
+															<td>0</td>
+															<td>OBS_jesse_seidman@baxter.com                                          </td>
+															<td>8479484619</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_contact_4">
+															<td>22976</td>
+															<td>LARYSA RICKETTS                              </td>
+															<td>9052816603</td>
+															<td>0</td>
+															<td>OBS_larysa_ricketts@baxter.com                                        </td>
+															<td>9052816750</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_contact_5">
+															<td>21626</td>
+															<td>DAVID E. CURTIN                              </td>
+															<td>8474736079</td>
+															<td>0</td>
+															<td>OBS_dave_curtin@baxter.com                                            </td>
+															<td>8477855116</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_contact_6">
+															<td>26879</td>
+															<td>NANETTE HEDDEN                               </td>
+															<td>8472704871</td>
+															<td>0</td>
+															<td>OBS_nanette_hedden@baxter.com                                         </td>
+															<td>8472704900</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_contact_7">
+															<td>33922</td>
+															<td>DARIN OPPENHEIMER                            </td>
+															<td>2242704403</td>
+															<td>0</td>
+															<td>OBS_darin_oppenheimer@baxter.com                                      </td>
+															<td>0</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_contact_8">
+															<td>37857</td>
+															<td>DIANE WASHINGTON MD                          </td>
+															<td>2242703183</td>
+															<td>0</td>
+															<td>OBS_diane_washington@baxter.com                                       </td>
+															<td>2242705639</td>
+															<td>101215</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_contact_9">
+															<td>4769</td>
+															<td>ENRICO MARCHETTI                             </td>
+															<td>1139053550255</td>
+															<td>0</td>
+															<td>OBS_enrico.marchetti@gambro.com                                       </td>
+															<td>1139053550359</td>
+															<td>104746</td>
+															<td>GAMBRO DASCO S.P.A.</td>
+														</tr>
+														<tr id="tr_contact_10">
+															<td>9624</td>
+															<td>FRANCESCO BARDELLI                           </td>
+															<td>39053550200</td>
+															<td>0</td>
+															<td>OBS_francesco.bardelli@gambro.com                                     </td>
+															<td>39053550359</td>
+															<td>104746</td>
+															<td>GAMBRO DASCO S.P.A.</td>
+														</tr>
+														<tr id="tr_contact_11">
+															<td>20470</td>
+															<td>EMMANUELLE MOULIN                            </td>
+															<td>1133437281118</td>
+															<td>0</td>
+															<td>OBS_emmanuelle.moulin@gambro.com                                      </td>
+															<td>1133437281051</td>
+															<td>104746</td>
+															<td>GAMBRO DASCO S.P.A.</td>
+														</tr>
+														<tr id="tr_contact_12">
+															<td>37180</td>
+															<td>RICCARDO PELLEGRINI                          </td>
+															<td>1139053550111</td>
+															<td>0</td>
+															<td>OBS_riccardo_pellegrini@baxter.com                                    </td>
+															<td>0</td>
+															<td>104746</td>
+															<td>GAMBRO DASCO S.P.A.</td>
+														</tr>
+														<tr id="tr_contact_13">
+															<td>38250</td>
+															<td>FEDERICA GHIRELLI                            </td>
+															<td>1139053550962</td>
+															<td>0</td>
+															<td>OBS_federica_ghirelli@baxter.com                                      </td>
+															<td>0</td>
+															<td>104746</td>
+															<td>GAMBRO DASCO S.P.A.</td>
+														</tr>
+														<tr id="tr_contact_14">
+															<td>4193</td>
+															<td>MRS. INGEBORG DIERNHOFER                     </td>
+															<td>222201000</td>
+															<td>0</td>
+															<td>OBS_                                                                  </td>
+															<td>2222037124</td>
+															<td>107861</td>
+															<td>BAXTER AG</td>
+														</tr>
+														<tr id="tr_contact_15">
+															<td>19352</td>
+															<td>MAJA CRNOGATIC                               </td>
+															<td>498931701191</td>
+															<td>0</td>
+															<td>OBS_maja_crnogatic@baxter.com                                         </td>
+															<td>498931701257</td>
+															<td>107861</td>
+															<td>BAXTER AG</td>
+														</tr>
+														<tr id="tr_contact_16">
+															<td>23625</td>
+															<td>SUSANNE SCHOBER-BENDIXEN                     </td>
+															<td>11431201004650</td>
+															<td>0</td>
+															<td>OBS_susanne_schober-bendixen@baxter.com                               </td>
+															<td>11431201005200</td>
+															<td>107861</td>
+															<td>BAXTER AG</td>
+														</tr>
+														<tr id="tr_contact_17">
+															<td>31482</td>
+															<td>INGRID BOUMAZBAR                             </td>
+															<td>1143120102472509</td>
+															<td>0</td>
+															<td>OBS_ingrid_boumazbar@baxter.com                                       </td>
+															<td>11431201005072</td>
+															<td>107861</td>
+															<td>BAXTER AG</td>
+														</tr>
+														<tr id="tr_contact_18">
+															<td>2795</td>
+															<td>MR. CHARLES MARTINA                          </td>
+															<td>5857983901</td>
+															<td>0</td>
+															<td>OBS_                                                                  </td>
+															<td>0</td>
+															<td>109452</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_contact_19">
+															<td>3524</td>
+															<td>RONALD BRANDT                                </td>
+															<td>5857983901</td>
+															<td>0</td>
+															<td>OBS_                                                                  </td>
+															<td>5857983909</td>
+															<td>109452</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_contact_20">
+															<td>6980</td>
+															<td>KEN ROSE                                     </td>
+															<td>5857983901</td>
+															<td>0</td>
+															<td>OBS_krose@sigmapumps.com                                              </td>
+															<td>5857983909</td>
+															<td>109452</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_contact_21">
+															<td>11131</td>
+															<td>GARY L. LAWTON SR.                           </td>
+															<td>5854983901</td>
+															<td>215</td>
+															<td>OBS_glawton@sigmapumps.com                                            </td>
+															<td>5854983909</td>
+															<td>109452</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_contact_22">
+															<td>28031</td>
+															<td>DANIEL J. WELLINGTON                         </td>
+															<td>8003563454</td>
+															<td>234</td>
+															<td>OBS_dwellington@sigmapumps.com                                        </td>
+															<td>5857983909</td>
+															<td>109452</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_contact_23">
+															<td>29938</td>
+															<td>MICHAEL H. SOUTHWORTH                        </td>
+															<td>8003563454</td>
+															<td>244</td>
+															<td>OBS_michael-southworth@baxter.com                                     </td>
+															<td>5857983909</td>
+															<td>109452</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_contact_24">
+															<td>33211</td>
+															<td>THOMAS SAMPOGNA                              </td>
+															<td>2242704307</td>
+															<td>0</td>
+															<td>OBS_thomas_sampogna@baxter.com                                        </td>
+															<td>8477865116</td>
+															<td>109452</td>
+															<td>BAXTER HEALTHCARE CORPORATION</td>
+														</tr>
+														<tr id="tr_contact_25">
+															<td>23909</td>
+															<td>MR. MADU OJI                                 </td>
+															<td>114402087314240</td>
+															<td>0</td>
+															<td>OBS_madu.oji@apatech.com                                              </td>
+															<td>114402087314669</td>
+															<td>129031</td>
+															<td>APATECH LIMITED</td>
+														</tr>
+														<tr id="tr_contact_26">
+															<td>30845</td>
+															<td>ANDREW CAMP                                  </td>
+															<td>114402087314644</td>
+															<td>0</td>
+															<td>OBS_andy_camp@baxter.com                                              </td>
+															<td>114402087314669</td>
+															<td>129031</td>
+															<td>APATECH LIMITED</td>
+														</tr>
+														<tr id="tr_contact_27">
+															<td>24587</td>
+															<td>DR. GIOVANNA LORENZI STOCKER                 </td>
+															<td>1141449085249</td>
+															<td>0</td>
+															<td>OBS_giovanna_lorenzi@baxter.com                                       </td>
+															<td>1141449085040</td>
+															<td>129789</td>
+															<td>BAXTER HEALTHCARE SA</td>
+														</tr>
+														<tr id="tr_contact_28">
+															<td>27123</td>
+															<td>PATRICIA MELERSKI                            </td>
+															<td>8472704453</td>
+															<td>0</td>
+															<td>OBS_patricia_melerski@baxter.com                                      </td>
+															<td>8477865116</td>
+															<td>129789</td>
+															<td>BAXTER HEALTHCARE SA</td>
+														</tr>
+														<tr id="tr_contact_29">
+															<td>31054</td>
+															<td>STEVEN MARTIN                                </td>
+															<td>1141448786047</td>
+															<td>0</td>
+															<td>OBS_steven_martin@baxter.com                                          </td>
+															<td>1141448786483</td>
+															<td>129789</td>
+															<td>BAXTER HEALTHCARE SA</td>
+														</tr>
+														<tr id="tr_contact_30">
+															<td>32177</td>
+															<td>CORNELIS DEN BESTEN                          </td>
+															<td>113223869590</td>
+															<td>0</td>
+															<td>OBS_kees_den_besten@baxter.com                                        </td>
+															<td>0</td>
+															<td>129789</td>
+															<td>BAXTER HEALTHCARE SA</td>
+														</tr>
+													</tbody>
+												</table>
+											</form>
+										</div>
+									</div>
+								</div>
+								<br />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer role="contentinfo" class="bs-footer">
+			<div version="2.0" class="container" id="footer">
+				<div class="col-xs-12 col-sm-9">
+					<span>
+						<a href="/MedicalDevice/">Home</a>
+					</span>
+					|
+					<span>
+						<a href="/MedicalDevice/resources/j_spring_security_logout">Logout</a>
+					</span>
+					<span id="language">
+						| Language:
+						<a title="Switch language to English" href="?form&amp;lang=en">
+							<img alt="Switch language to English" src="/MedicalDevice/resources/images/en.png"
+								class="flag" />
+						</a>
+						<a title="Switch language to French" href="?form&amp;lang=fr">
+							<img alt="Switch language to French" src="/MedicalDevice/resources/images/fr.png"
+								class="flag" />
+						</a>
+					</span>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
