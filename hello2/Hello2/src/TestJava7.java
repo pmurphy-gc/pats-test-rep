@@ -27,20 +27,20 @@ public class TestJava7
     
     public static void stringSwitch()
     {
-        String name = "bob";
+        String name = "bob2";
         out.println("name=" + name);
  
         switch (name)
         {
  
-        case "bob":
+        case "bob2":
  
-            out.println("Bob Johnson?");
+            out.println("Bob Johnson2?");
  
             break;
  
         default:
-            out.println("Who?");
+            out.println("Who2?");
  
             break;
  
@@ -53,13 +53,13 @@ public class TestJava7
         {
             //String s=null;
             if(s==null)
-                throw new NoSuchMethodException("Bad bad bad3");
+                throw new NoSuchMethodException("Bad bad bad4");
             if(s!=null)
-                throw new NumberFormatException("Bad number3");
+                throw new NumberFormatException("Bad number4");
         }
         catch (NoSuchMethodException|NumberFormatException e)
         {
-           out.println("Test error3:"+e);
+           out.println("Test error4:"+e);
         }
     }
     
