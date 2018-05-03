@@ -53,13 +53,13 @@ public class TestJava7
         {
             //String s=null;
             if(s==null)
-                throw new NoSuchMethodException("Bad2 bad2 bad2");
+                throw new NoSuchMethodException("Bad bad bad4");
             if(s!=null)
-                throw new NumberFormatException("Bad2 number2");
+                throw new NumberFormatException("Bad number4");
         }
         catch (NoSuchMethodException|NumberFormatException e)
         {
-           out.println("Test error2:"+e);
+           out.println("Test error4:"+e);
         }
     }
     
@@ -78,11 +78,11 @@ public class TestJava7
         }
         catch (FileNotFoundException ex)
         {
-            out.println("File '"+fileName+"' is not found");
+            out.println("File '"+fileName+"' is not found3");
         }
         catch (IOException ex)
         {
-            out.println("Can't read the file");
+            out.println("Can't read the file3");
         }
     }
     
