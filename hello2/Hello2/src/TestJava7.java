@@ -27,13 +27,13 @@ public class TestJava7
     
     public static void stringSwitch()
     {
-        String name = "bob2";
+        String name = "bob2c";
         out.println("name=" + name);
  
         switch (name)
         {
  
-        case "bob2":
+        case "bob2c":
  
             out.println("Bob Johnson2?");
  
@@ -53,9 +53,9 @@ public class TestJava7
         {
             //String s=null;
             if(s==null)
-                throw new NoSuchMethodException("Bad bad bad4");
+                throw new NoSuchMethodException("Bad bad bad4c");
             if(s!=null)
-                throw new NumberFormatException("Bad number4");
+                throw new NumberFormatException("Bad number4c");
         }
         catch (NoSuchMethodException|NumberFormatException e)
         {
