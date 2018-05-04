@@ -27,20 +27,20 @@ public class TestJava7
     
     public static void stringSwitch()
     {
-        String name = "bob2";
+        String name = "bob2b";
         out.println("name=" + name);
  
         switch (name)
         {
  
-        case "bob2":
+        case "bob2b":
  
             out.println("Bob Johnson2?");
  
             break;
  
         default:
-            out.println("Who2?");
+            out.println("Whob2?");
  
             break;
  
